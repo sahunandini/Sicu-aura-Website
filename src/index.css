@@ -1,0 +1,478 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=STIX+Two+Text&display=swap'); */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #10182e;
+  /* font-family: 'Anton', sans-serif;
+  font-family: 'Castoro', serif; */
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.logo img {
+  width: 140px;
+}
+#main {
+  width: 100%;
+  height: 110vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: #10182e;  
+  justify-content: space-between;
+  position: relative;
+}
+.header-text-background {
+  width: 53%;
+  height: 550px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./images/Galaxy.png");
+  z-index: 0;
+}
+.header-image {
+  width: 47%;
+  height: 430px;
+}
+.header-text {
+  color: white;
+  padding: 15% 0 0 10%;
+  font-size: 22px;
+}
+.header-text h2 {
+  padding-right: 30%;
+  font-size: 45px;
+}
+#main::before {
+  position: absolute;
+  content: "";
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(12, 10, 56, 0.38) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b50808', endColorstr='#99000000',GradientType=1 );
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+}
+nav.active {
+  box-shadow: 5px 10px 30px rgba(24, 17, 73, 0.879);
+  background-color: #0d1526;
+}
+nav ul {
+  display: flex;
+}
+.active {
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(24, 17, 73, 0.879);
+  transition: all ease 0.2s;
+}
+.active:hover {
+  background-color: #10182e;
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(24, 17, 73, 0.879);
+  transition: all ease 0.2s;
+}
+nav ul li a {
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+nav ul li a:hover {
+  background-color: #0df5e3;
+  color: #000000;
+  box-shadow: 5px 10px 30px rgba(24, 17, 73, 0.879);
+  transition: all ease 0.2s;
+}
+nav .menu-btn,
+.menu-icon {
+  display: none;
+}
+#home {
+  width:100%;
+  height: 340px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  background-color: #10182e;
+}
+.home-image {
+  position: relative;
+  top: -235px;
+}
+
+
+.hright {
+  margin: 80px 60px 0px;
+}
+.hright h2 {
+  margin: 0;
+  font-size: 45px;
+  padding: 0 0 40px 0;
+}
+.beta {
+  margin: 50px;
+  margin-left: 100px;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+}
+.followB {
+  margin: 50px;
+  margin-left: 100px;
+  padding: 5px 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+}
+.imgg {
+  margin: 50px 0;
+}
+.logotwi {
+  position: absolute;
+  top: 63%;
+  left: 65%;
+}
+.followtwit {
+  margin: 60px 50px 0px 100px;
+  padding: 5px 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+}
+.image-tiw {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+#blog {
+  background-color: #10182e;
+}
+
+#vision {
+  width: 100%;
+  height: 90vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6% 5% 5% 5%;
+  position: relative;
+  background-color: #10182e;
+
+}
+
+.vision-text {
+  width: 48%;
+  color: #fff;
+  list-style: circle;
+}
+
+.vision-text p {
+  width: 80%;
+  font-size: 1.2rem;
+  color: #cecece;
+}
+.vision-text button {
+  margin-top: 20px;
+  width: 140px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #000000;
+  background-color: #0df5e3;
+}
+.vision-text button:hover {
+  box-shadow: 3px 3px 6px 1px #0df5e3;
+  background-color: #10182e;
+  transition: all ease 0.1s;
+  color: #ffffff;
+}
+.vision-image {
+  width: 50%;
+}
+.vision-image img {
+  width: 600px;
+}
+
+@media (max-width: 1190px) {
+  #main {
+    background-size: 1150px !important;
+  }
+
+  .vision-image img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 970px) {
+  #main {
+    height: 650px;
+  }
+
+  .vision-image {
+    display: none;
+  }
+  .header-btn {
+    margin-left: 20%;
+    margin-top: 20px;
+  }
+
+  #vision {
+    justify-content: center;
+    padding-top: 0px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .vision-text {
+    width: 90%;
+  }
+  .vision-text h1 {
+    font-size: 4rem;
+  }
+  .vision-text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .menu-icon {
+    display: block;
+  }
+  nav {
+    justify-content: space-between;
+    height: 65px;
+    padding: 0px 30px;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .header-btns {
+    margin: 0;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: #10182e;
+    border-bottom: 4px solid #0df5e3;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .menu li {
+    width: 100%;
+  }
+  nav .menu li a {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 25px;
+    border: 1px solid rgba(38, 38, 38, 0.03);
+  }
+  nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  nav .menu-icon .nav-icon {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 24px;
+  }
+  nav .menu-icon .nav-icon:before,
+  nav .menu-icon .nav-icon:after {
+    background: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+  nav .menu-icon .nav-icon:before {
+    top: 6px;
+  }
+  nav .menu-icon .nav-icon:after {
+    top: -6px;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  nav .menu-btn {
+    display: none;
+  }
+  nav .menu-btn:checked ~ .menu {
+    display: block;
+  }
+}
+
+.sec_padding {
+  padding: 5rem 4rem 0rem;
+}
+.footer {
+  background-color: #eeeff1;
+}
+.s_footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.footer_links-div {
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #000000;
+}
+.footer-a {
+  color: rgb(112, 112, 112);
+  text-decoration: none;
+  margin-top: -7px;
+  padding: 5px;
+}
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+}
+.holo {
+  padding: 3rem 0 0rem 0;
+}
+.socialmedia img {
+  width: 30%;
+  padding-right: 10px;
+  margin-top: -1rem;
+}
+.footer_links-div h4 {
+  font-size: 18px;
+  margin-top: -2rem;
+  margin-bottom: 0.9rem;
+}
+.footer_links-div h5 {
+  font-size: 16px;
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+}
+.footer_links-div {
+  font-size: 16px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.add-p {
+  font-size: 13px;
+  margin-top: 2px;
+  color: rgb(112, 112, 112);
+}
+.footer_below {
+  display: relative;
+  text-align: center;
+  height: 45px;
+}
+hr {
+  margin-top: 1px;
+}
+.follow_copyright p {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 600;
+}
+
+@media screen and (max-widhth: 850px) {
+  .footer-heading h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-widhth: 550px) {
+  .footer-heading h1 {
+    font-size: 34px;
+  }
+  .footer-links div {
+    margin: 1rem 0;
+  }
+  .footer-btn p {
+    font-size: 14px;
+  }
+  .footer_below {
+    flex-direction: column;
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-heading h1 {
+    font-size: 27px;
+  }
+}
+
